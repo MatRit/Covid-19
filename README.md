@@ -8,8 +8,8 @@ One major bottleneck in the ongoing COVID-19 pandemic is the limited number of c
 The manuscript is currently under review. A previous version of this manuscript, where the model has only been applied to data from Berlin, can be found here: https://arxiv.org/ftp/arxiv/papers/2004/2004.03384.pdf
 
 
-## Code structure
+### Code structure
 The main file is Covid19.m The script can be adapted to data from different cities, regions or countries. The respective data has to be saved in an additional xlsx sheet. Ranges for the parameters ICU rate, average time in ICU and time lag between reported infection and ICU admission have to be defined by the user. The model first estimates those parameters for the available data (by reducing the root mean squared error) and then predicts the future ICU load for a fixed time horizon (e.g., 2 months; can also be determined by the user) assuming different exponential growth rates or linear growth with different slopes. Optionally, capacity limits can be given. 
 
-## Data
+### Data
 All data we used are public and can be downloaded from the *Berlin Senate Department for Health, Nursing and Equal Opportunities* (https://www.berlin.de/sen/gpg/service/presse/2020/} for Berlin, the *Presidenza del Consiglio dei Ministri -- Dipartimento della Protezione Civile* (https://github.com/pcm-dpc/covid-19/blob/master/schede-riepilogative/regioni/dpc-covid19-ita-scheda-regioni-20200421.pdf} for Lombardy, and *Datadista* (https://github.com/datadista/datasets/tree/master/COVID\%2019) for Madrid. We additionally provide here the xlsx sheets for Berlin, Lombardy and Madrid with data until April 20, 2020. 
