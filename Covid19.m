@@ -6,7 +6,7 @@ Place='Berlin_March';
 alpha=0.01:0.01:0.20; %Share of infections needing ICU
 Kmax=1:14; % Average time in hospital
 L=1:10; % average lag between reported infection and ICU admission
-ForecastHorizon=30;
+ForecastHorizon=30; 
 
 Data=xlsread(['Data_' Place '.xlsx']);
 
